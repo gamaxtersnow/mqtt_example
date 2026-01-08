@@ -135,7 +135,7 @@ client.Disconnect(250)  // 发送DISCONNECT包
      -t 'emqx/will/status' \
      --will-topic 'emqx/will/test' \
      --will-payload '客户端异常断开' \
-     --will-qos 1 --will-retain false
+     --will-qos 1
    ```
 
 3. 异常断开测试：
@@ -221,7 +221,6 @@ opts.SetWill("monitor/service/status", willMsg, 2, true)
    - 验证客户端 ID 是否相同
 
 3. **保留消息未收到**
-   - 确认发布时设置了 retained=true
    - 检查主题名称是否完全匹配
    - 确认服务器支持保留消息
 
