@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package emqx;
+option go_package="./emqx";
+
+message Request {
+  string ping = 1;
+}
+
+message Response {
+  string pong = 1;
+}
+
+service Emqx {
+  rpc Ping(Request) returns(Response);
+}
