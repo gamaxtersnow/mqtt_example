@@ -302,7 +302,7 @@ mqtt.ERROR = log.New(os.Stdout, "[MQTT ERROR] ", 0)
 ## 参考资料
 
 - [paho.mqtt.golang 官方文档](https://github.com/eclipse/paho.mqtt.golang)
-- [EMQX 公共 MQTT 服务器](https://www.emqx.io/docs/zh/)
+- [EMQX 公共 MQTT 服务器](https://docs.emqx.com/en/)
 - [go-zero 官方文档](https://go-zero.dev/)
 - [MQTT 协议规范](https://mqtt.org/)
 
